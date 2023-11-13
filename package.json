@@ -1,0 +1,25 @@
+{
+  "name": "shisha",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "browserslist": [
+    "cover 99.5%"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "sass": "^1.69.5",
+    "vite": "^4.4.5",
+    "vite-plugin-inspect": "^0.7.40"
+  },
+  "dependencies": {
+    "postcss-sort-media-queries": "^5.2.0",
+    "vite-plugin-handlebars": "^1.6.0",
+    "vite-svg-sprite-wrapper": "^1.1.1"
+  }
+}

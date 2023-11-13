@@ -1,0 +1,62 @@
+.header
+	display: none
+	width: 100%
+	padding: 10px 0
+	background-color: $white
+	box-shadow: $shadow006
+	&__wrap
+		padding: 0px 15px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: center
+	&__logo
+		margin-bottom: 0
+.toggle
+	width: 33px
+	height: 30px
+	position: relative
+	z-index: 50
+	cursor: pointer
+	&__line
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		left: 0
+		right: 0
+		height: 2px
+		background-color: $additionalColor4
+		border-radius: 300px
+		transition: all 0.3s
+		&::after
+			content: ''
+			position: absolute
+			top: -8px
+			left: 0
+			right: 0
+			height: 2px
+			background-color: $additionalColor4
+			border-radius: 300px
+			transition: all 0.3s
+		&::before
+			content: ''
+			position: absolute
+			bottom: -8px
+			left: 0
+			right: 0
+			height: 2px
+			background-color: $additionalColor4
+			border-radius: 300px
+			transition: all 0.3s
+	&.active
+		.toggle__line
+			background-color: transparent
+			&::after
+				top: 0
+				transform: rotate(45deg)
+			&::before
+				bottom: 0
+				transform: rotate(-45deg)
+@media (max-width: 1100px)
+	.header
+		display: block

@@ -1,0 +1,51 @@
+.getpartner
+	margin-bottom: 60px
+	color: $white
+	&__wrap
+		padding: 42px 15px 177px 15px
+		border-radius: 14px
+		overflow: hidden
+		background: url(../img/getpartner-bg.webp) center / cover no-repeat
+		position: relative
+	&__text-wrap
+		max-width: 470px
+		width: 100%
+		margin-left: auto
+		margin-right: auto
+		text-align: center
+	&__title
+		font-size: 26px
+		line-height: 1.4
+		font-weight: 700
+		margin-bottom: 10px
+	&__text
+		font-weight: 600
+		margin-bottom: 24px
+	&__img
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		height: 202px
+		pointer-events: none
+		img
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			object-fit: cover
+			object-position: top center
+@media (max-width: 850px)
+	.getpartner
+		margin-bottom: 30px
+	.getpartner__wrap
+		padding-top: 25px
+
+@media (max-width: 600px)
+	.getpartner__title
+		font-size: 22px
+	.getpartner__img
+		height: 120px
+	.getpartner__wrap
+		padding-bottom: 120px

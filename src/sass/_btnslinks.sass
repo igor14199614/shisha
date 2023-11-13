@@ -1,0 +1,53 @@
+.btn1
+	color: $white
+	background-color: $additionalColor4
+	display: flex
+	align-items: center
+	justify-content: center
+	font-weight: 700
+	border-radius: 8px
+	padding: 14.5px 10px
+	transition: background-color 0.3s
+	&__icon
+		margin-right: 8px
+		display: flex
+		svg
+			width: 20px
+			height: 20px
+.btn2
+	display: inline-block
+	color: $additionalColor4
+	background-color: $additionalColor6
+	padding: 12.5px 18px
+	font-weight: 700
+	border-radius: 8px
+	transition: all 0.3s
+.link1
+	display: inline-block
+	font-size: 12px
+	font-weight: 600
+	color: $additionalColor4
+	span
+		border-bottom: 1px solid $additionalColor4
+		transition: border-bottom 0.3s
+.btn3
+	display: inline-block
+	color: $additionalColor4
+	font-weight: 700
+	padding: 16px 18px
+	padding-top: 13px
+	border-radius: 8px
+	background-color: $white
+	transition: all 0.3s
+.no-touch
+	.btn1:hover
+		background-color: $additionalColor5
+	.btn2:hover
+		background-color: $additionalColor5
+		color: $white
+	.link1:hover
+		span
+			border-bottom: 1px solid transparent
+	.btn3:hover
+		background-color: $additionalColor5
+		color: $white
