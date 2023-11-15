@@ -1,9 +1,15 @@
 .header
+	position: fixed
+	z-index: 45
+	top: 0
+	left: 0
+	width: 100%
 	display: none
 	width: 100%
 	padding: 10px 0
 	background-color: $white
 	box-shadow: $shadow006
+	transition: transform 0.3s
 	&__wrap
 		padding: 0px 15px
 		display: flex
@@ -12,6 +18,8 @@
 		align-items: center
 	&__logo
 		margin-bottom: 0
+	&--hidden
+		transform: translateY(-110%)
 .toggle
 	width: 33px
 	height: 30px

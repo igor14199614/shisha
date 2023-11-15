@@ -49,7 +49,10 @@
 						</div>
 						<div class="supportproject__wrap2">
 							<div class="supportproject__img">
-								<img src="/src/img/supportproject-img.webp" alt="">
+								<picture>
+									<source srcset="/src/img/supportproject-img-adaptiv.webp" media="(max-width: 850px)" />
+									<img src="/src/img/supportproject-img.webp" alt="">
+								</picture>
 							</div>
 						</div>
 						<div class="supportproject__wrap3">
@@ -62,7 +65,7 @@
 									</div>
 									<div class="supportproject-item">
 										<div class="supportproject-item__img">
-											<img src="/src/img/supportproject-logo2.webp" alt="">
+											<img src="/src/img/supportproject-logo2.svg" alt="">
 										</div>
 									</div>
 								</div>
@@ -474,9 +477,7 @@
 		</div>
 	</main>
 </div>
-	<div class="hidden">
-		
-	</div>
-	<script type="module" src="/main.js"></script>
+{{> popups}}
+<script type="module" src="/main.js"></script>
 </body>
 </html>

@@ -22,19 +22,42 @@
 		justify-content: flex-start
 		color: $additionalColor1
 		font-size: 18px
-		font-weight: 700
+		font-weight: 600
 		transition: color 0.3s
+		&:active
+			color: $additionalColor4
+			.menu__link-icon
+				background-color: $additionalColor6
 	&__link-icon
 		display: flex
-		margin-right: 14px
+		align-items: center
+		justify-content: center
+		margin-right: 8px
+		width: 32px
+		height: 32px
+		border-radius: 6px
+		transition: background-color 0.3s
 		svg
 			width: 20px
 			height: 20px
 .no-touch
 	.menu__link:hover
 		color: $additionalColor4
+
+@media (max-width: 1500px)
+	.main__wrap1
+		padding: 15px
+	.aside .logo
+		margin-bottom: 20px
+	.menu__item
+		margin-bottom: 7px
+	.aside__btn1-wrap
+		margin-top: 20px
+		
 @media (max-width: 1100px)
 	.aside__btn2-wrap .btn2
 		display: block
 		text-align: center
 		padding: 12.5px 10px
+	.aside .logo
+		display: none

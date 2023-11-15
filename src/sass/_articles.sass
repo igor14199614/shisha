@@ -35,7 +35,7 @@
 				font-size: 14px
 				order: 1
 				text-align: right
-				margin-top: -23px
+				margin-top: -21px
 				margin-bottom: 0
 				padding-right: 71px
 		.articles-item1:nth-child(1)
@@ -73,7 +73,7 @@
 			border: 1px solid $additionalColor11
 	&__title1
 		font-size: 16px
-		font-weight: 500
+		font-weight: 400
 		color: $additionalColor12
 		margin-bottom: 18px
 	&__list5
@@ -110,7 +110,6 @@
 	display: flex
 	flex-direction: column
 	min-height: 300px
-	font-weight: 600
 	color: $white
 	padding: 40px 36px
 	&--small1
@@ -141,6 +140,7 @@
 			-webkit-box-orient: vertical
 			line-clamp: 4
 			box-orient: vertical
+			color: $additionalColor8
 	&--small2
 		padding: 25px 15px
 		min-height: 301px
@@ -186,7 +186,7 @@
 		margin-bottom: 10px
 	&__author
 		font-size: 12px
-		font-weight: 500
+		font-weight: 400
 		color: $additionalColor13
 	&__img1
 		position: absolute
@@ -216,7 +216,7 @@
 		max-width: 640px
 		width: 100%
 		font-size: 26px
-		font-weight: 700
+		font-weight: 600
 		line-height: 1.4
 		margin-bottom: 14px
 		transition: color 0.3s
@@ -237,7 +237,6 @@
 		justify-content: flex-start
 		align-items: center
 	&__btn
-		font-weight: 600
 		color: $white
 		margin-right: 18px
 		display: inline-flex
@@ -268,14 +267,12 @@
 			height: 20px
 .no-touch
 	.articles-item1:hover .articles-item1__img1 img
-		transform: rotate(5deg) scale(1.5)
+		transform: scale(1.2)
 	.articles-item1--small1:hover .articles-item1__title
 		color: $additionalColor4
 @media (max-width: 850px)
 	.articles-item1
-		padding: 25px 15px
-	.articles
-		margin-bottom: 30px
+		padding: 15px
 	.articles__wrap1
 		width: 100%
 		margin-bottom: 10px
@@ -315,9 +312,25 @@
 		width: 100%
 @media (max-width: 500px)
 	.articles__col5 .articles-item1__img1
-		height: 220px
-		width: 220px
+		width: 100%
+		padding-top: 80%
 		margin-bottom: 20px
 	.articles__col5 .articles-item1__text-wrap
 		width: 100%
-		
+	.articles-item1__text
+		margin-bottom: 25px
+	.articles__list2 .articles-item1--small1 .articles-item1__date
+		font-size: 14px
+		order: 1
+		margin-top: -21px
+		text-align: right
+		padding-right: 71px
+	.articles__list4 .articles-item1__date-wrap .articles-item1__date
+		position: absolute
+		font-size: 14px
+		bottom: 15px
+		right: 86px
+	.articles__list2 .articles-item1:nth-child(1) .articles-item1__img1,
+	.articles__list2 .articles-item1:nth-child(5) .articles-item1__img1
+		padding-top: 80%
+		height: auto
