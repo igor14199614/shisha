@@ -19,6 +19,8 @@
     "vite-plugin-inspect": "^0.7.40"
   },
   "dependencies": {
+    "@fancyapps/ui": "^5.0.28",
+    "cleave.js": "^1.6.0",
     "postcss-sort-media-queries": "^5.2.0",
     "vite-plugin-handlebars": "^1.6.0",
     "vite-svg-sprite-wrapper": "^1.1.1"

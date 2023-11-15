@@ -14,8 +14,10 @@
 			margin-bottom: 0
 		&--disabled
 			.menu__link
-				color: #C2C2C2
+				color: $additionalColor2
 				pointer-events: none
+			.menu__link-icon
+				color: $additionalColor2
 	&__link
 		display: inline-flex
 		align-items: center
@@ -36,13 +38,16 @@
 		width: 32px
 		height: 32px
 		border-radius: 6px
-		transition: background-color 0.3s
+		color: $additionalColor14
+		transition: all 0.3s
 		svg
 			width: 20px
 			height: 20px
 .no-touch
 	.menu__link:hover
 		color: $additionalColor4
+		.menu__link-icon
+			color: $additionalColor4
 
 @media (max-width: 1500px)
 	.main__wrap1
