@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@fancyapps/ui": "^5.0.28",
+    "chart.js": "^4.4.0",
     "cleave.js": "^1.6.0",
     "postcss-sort-media-queries": "^5.2.0",
     "vite-plugin-handlebars": "^1.6.0",

@@ -6,7 +6,8 @@
 	justify-content: center
 	font-weight: 600
 	border-radius: 8px
-	padding: 14.5px 10px
+	padding: 13px 10px
+	padding-bottom: 16px
 	transition: background-color 0.3s
 	&__icon
 		margin-right: 8px
@@ -54,6 +55,56 @@
 	color: $white
 	background-color: $additionalColor4
 	pointer-events: initial
+.btn4
+	display: inline-flex
+	align-items: center
+	justify-content: center
+	color: $white
+	font-weight: 600
+	border-radius: 8px
+	background: $additionalColor4
+	padding: 13px 16px
+	padding-bottom: 16px
+	transition: background-color 0.3s
+	&__icon
+		display: flex
+		margin-left: 8px
+		svg
+			width: 20px
+			height: 20px
+.link2
+	display: inline-block
+	color: $additionalColor12
+	span
+		border-bottom: 1px solid $additionalColor12
+		transition: border-bottom 0.3s
+.btn5
+	display: inline-block
+	color: $additionalColor4
+	font-weight: 600
+	border-radius: 8px
+	border: 1px solid $additionalColor4
+	padding: 13px 18px
+	padding-bottom: 15px
+	transition: all 0.3s
+.link-back
+	color: $additionalColor12
+	display: inline-flex
+	align-items: center
+	justify-content: center
+	margin-bottom: 26px
+	transition: color 0.3s
+	&__icon
+		display: flex
+		margin-right: 10px
+		svg
+			width: 20px
+			height: 20px
+			transform: rotate(180deg)
+.link3
+	display: inline-block
+	color: $additionalColor12
+	transition: color 0.3s
 .no-touch
 	.btn1:hover
 		background-color: $additionalColor5
@@ -67,3 +118,15 @@
 		color: $white
 	.input-checkbox1:checked ~ .form .form-btn:hover
 		background-color: $additionalColor5
+	.btn4:hover
+		background-color: $additionalColor5
+	.link2:hover
+		span
+			border-bottom: 1px solid transparent
+	.btn5:hover
+		background-color: $additionalColor5
+		color: $white
+	.link-back:hover
+		color: $additionalColor4
+	.link3:hover
+		color: $additionalColor4

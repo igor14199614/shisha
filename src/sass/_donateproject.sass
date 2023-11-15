@@ -1,0 +1,209 @@
+.donateproject
+	&__container1
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: center
+		border-radius: 14px
+		background-color: $white
+		box-shadow: $shadow004
+		padding: 14px 14px 14px 30px
+		margin-bottom: 52px
+	&__wrap1
+		width: calc(100% - 339px)
+	&__title1
+		font-size: 26px
+		font-weight: 600
+		margin-bottom: 7px
+	&__text
+		color: $additionalColor8
+		font-size: 16px
+		margin-bottom: 34px
+	&__btn-wrap1
+		max-width: 405px
+		width: 100%
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: center
+		margin-top: -20px
+	&__btn4
+		margin-top: 20px
+	&__link2
+		margin-top: 20px
+	&__wrap2
+		max-width: 275px
+		width: 100%
+		border-radius: 12px
+		background: $additionalColor17
+		padding: 30px
+	&__chart
+		width: 142px
+		height: 142px
+		margin-left: auto
+		margin-right: auto
+		position: relative
+		margin-bottom: 18px
+	&__chart-val
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		font-size: 26px
+		font-weight: 600
+	&__wrap2-text
+		text-align: center
+		color: $additionalColor4
+	&__title2
+		font-size: 20px
+		line-height: 1.3
+		font-weight: 600
+		margin-bottom: 34px
+	&__list1
+		display: flex
+		flex-wrap: wrap
+		justify-content: flex-start
+		margin: 0px -5px
+		margin-top: -10px
+	&__col1
+		width: 50%
+		padding: 0px 5px
+		margin-top: 10px
+		display: flex
+.donateproject-item1
+	width: 100%
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	border-radius: 14px
+	background-color: $white
+	box-shadow: $shadow004
+	overflow: hidden
+	&__img-wrap
+		max-width: 160px
+		width: 100%
+		display: flex
+		overflow: hidden
+	&__img
+		width: 100%
+		padding-top: 138%
+		position: relative
+		transition: transform 0.6s
+		img
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			object-fit: cover
+			object-position: top center
+	&__text-wrap
+		width: calc(100% - 160px)
+		padding: 30px
+	&__title
+		font-size: 16px
+		line-height: 1.4
+		margin-bottom: 15px
+	&__price
+		font-size: 20px
+		color: $additionalColor13
+		margin-bottom: 20px
+.donateproject-item2
+	padding: 30px
+	border-radius: 22px
+	background: $white
+	box-shadow: $shadow004
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	&__img-wrap
+		max-width: 300px
+		width: 100%
+		display: flex
+	&__img
+		width: 100%
+		padding-top: 124%
+		position: relative
+		border-radius: 10px
+		overflow: hidden
+		img
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			object-fit: cover
+			object-position: top center
+	&__text-wrap
+		width: calc(100% - 300px)
+		padding-left: 30px
+	&__title
+		font-size: 26px
+		line-height: 1.4
+		font-weight: 600
+		margin-bottom: 14px
+	&__list
+		margin-bottom: 33px
+		li
+			color: $additionalColor8
+			margin-bottom: 8px
+			&:last-child
+				margin-bottom: 0
+			b
+				color: $mainColor
+				font-weight: 600
+	&__price
+		color: $additionalColor13
+		font-size: 20px
+		font-weight: 600
+		margin-bottom: 33px
+	&__btn-wrap
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: center
+		margin-top: -20px
+	&__btn4
+		margin-top: 20px
+	&__link3
+		margin-top: 20px
+.no-touch
+	.donateproject-item1:hover .donateproject-item1__img
+		transform: scale(1.2)
+
+@media (max-width: 850px)
+	.donateproject__wrap1
+		width: 100%
+		margin-bottom: 25px
+	.donateproject__container1
+		padding: 15px
+	.donateproject__col1
+		width: 100%
+	.donateproject-item1__text-wrap
+		padding: 15px
+
+@media (max-width: 750px)
+	.donateproject-item2__img-wrap
+		max-width: none
+		margin-bottom: 30px
+	.donateproject-item2__text-wrap
+		width: 100%
+		padding-left: 0
+	.donateproject-item2__img
+		padding-top: 80%
+
+@media (max-width: 600px)
+	.donateproject__title1,
+	.donateproject-item2__title
+		font-size: 20px
+	.donateproject-item2
+		padding: 15px 15px 30px 15px
+		border-radius: 15px
+
+@media (max-width: 450px)
+	.donateproject-item1__img-wrap
+		max-width: none
+	.donateproject-item1__img
+		padding-top: 100%
+	.donateproject-item1__text-wrap
+		width: 100%
