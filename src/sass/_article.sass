@@ -1,0 +1,467 @@
+.article
+	margin-bottom: 52px
+	> h1
+		font-size: 26px
+		font-weight: 600
+		margin-bottom: 30px
+		margin-top: 66px
+		&:first-of-type
+			margin-top: 0
+	> h2,
+	> h3,
+	> h4,
+	> h5
+		font-size: 22px
+		font-weight: 600
+		margin-bottom: 30px
+		margin-top: 66px
+		&:first-child
+			margin-top: 0
+	> p
+		font-size: 16px
+		color: $additionalColor8
+		margin: 30px 0
+		> i
+			font-style: italic
+			color: $additionalColor13
+		a
+			color: $additionalColor4
+			text-decoration: underline
+		b
+			color: $mainColor
+			font-weight: 600
+	> img
+		display: block
+		margin-top: 43px
+		margin-bottom: 43px
+		border-radius: 14px
+	> blockquote
+		margin: 30px 0
+		font-size: 16px
+		font-style: italic
+		color: $additionalColor13
+		padding-left: 20px
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			top: -1px
+			bottom: 0
+			left: 0
+			width: 2px
+			background-color: $additionalColor13
+			border-radius: 300px
+	&__text1
+		font-weight: 600
+		line-height: 1.4
+		font-style: italic
+	.article__text2
+		font-size: 18px
+		font-weight: 600
+	.article__text3
+		color: $additionalColor4
+		font-weight: 600
+	&__container1
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: center
+		margin-top: -15px
+	&__list1
+		display: flex
+		flex-wrap: wrap
+		justify-content: flex-start
+		align-items: center
+	&__date
+		color: $additionalColor10
+	&__title1
+		padding-top: 54px
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 30px
+			height: 30px
+			background: url(../img/hand1.webp) center / contain no-repeat
+	&__list3
+		margin-top: 30px
+		margin-bottom: 66px
+	&__container2
+		margin: 50px 0
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	&__wrap1
+		width: 49.5%
+		display: flex
+	&__wrap2
+		width: 49.5%
+		display: flex
+	&__comment
+		margin-top: 58px
+	&__anchor
+		position: relative
+		top: -20px
+	&__list5-wrap
+		border-radius: 14px
+		background-color: $white
+		padding: 24px 40px
+	&__list5
+		display: flex
+		flex-wrap: wrap
+		justify-content: flex-start
+		margin: 0px -15px
+		margin-top: -30px
+	&__col5
+		width: 20%
+		padding: 0px 15px
+		margin-top: 30px
+	&__list4-wrap
+		border-radius: 14px
+		background-color: $white
+		padding: 24px 40px
+	&__list4
+		display: flex
+		flex-wrap: wrap
+		justify-content: flex-start
+		margin: 0px -25px
+		margin-top: -30px
+	&__col4
+		width: 25%
+		padding: 0px 25px
+		margin-top: 30px
+	&__list6
+		margin: 30px 0
+		li
+			font-size: 16px
+			color: $additionalColor8
+			padding-left: 25px
+			position: relative
+			&::after
+				content: ''
+				position: absolute
+				top: 11px
+				left: 9px
+				width: 6px
+				height: 6px
+				background-color: $additionalColor8
+				border-radius: 50%
+	&__list7
+		margin: 30px 0
+	&__list8
+		display: flex
+		flex-wrap: wrap
+		justify-content: flex-start
+		margin: 0px -10px
+		margin-top: -20px
+	&__col8
+		width: 50%
+		padding: 0px 10px
+		margin-top: 20px
+	&__list9
+		counter-reset: myCounter
+		li
+			margin-bottom: 26px
+			&:last-child
+				margin-bottom: 0
+			b
+				color: $additionalColor4
+				display: block
+				font-size: 16px
+				font-weight: 600
+				&::before
+					counter-increment: myCounter
+					content: counter(myCounter) '.'
+					margin-right: 5px
+			p
+				color: $additionalColor8
+				font-size: 16px
+				margin-top: 12px
+	&__list10
+		li
+			margin-bottom: 26px
+			&:last-child
+				margin-bottom: 0
+			b
+				color: $additionalColor4
+				display: block
+				font-size: 16px
+				font-weight: 600
+			p
+				color: $additionalColor8
+				font-size: 16px
+				margin-top: 12px
+	&__list11
+		margin: 30px 0
+	&__list12
+		margin: 30px 0
+		li
+			font-size: 16px
+			color: $additionalColor8
+			&::before
+				content: '-'
+				margin-right: 5px
+	&__list13
+		max-width: 700px
+		width: 100%
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+.article-item1
+	color: $additionalColor12
+	margin-right: 18px
+.contents
+	margin-top: 33px
+	margin-bottom: 43px
+.contents-item
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	align-items: flex-start
+	font-size: 16px
+	color: $additionalColor4
+	margin-bottom: 14px
+	&:last-child
+		margin-bottom: 0
+	&__title
+		text-decoration: underline
+	&__line
+		flex-grow: 1
+		border-bottom: 2px dotted $additionalColor18
+		margin: 16px 5px 0px 5px
+.article-item2
+	margin-bottom: 22px
+	&:last-child
+		margin-bottom: 0
+	&__title
+		font-size: 16px
+		font-weight: 600
+		padding-left: 44px
+		position: relative
+		margin-bottom: 10px
+		&::after
+			content: ''
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			left: 0
+			width: 30px
+			height: 30px
+			background: url(../img/hand2.webp) center / contain no-repeat
+		&--icon1
+			&::after
+				background-image: url(../img/hand3.webp)
+	&__text
+		font-size: 16px
+		color: $additionalColor8
+		a
+			color: $additionalColor4
+			text-decoration: underline
+.article-item3
+	margin-bottom: 50px
+	&:last-child
+		margin-bottom: 0
+	&__img
+		background-color: $additionalColor6
+		border-radius: 14px
+		padding: 24px
+		text-align: center
+		margin-bottom: 30px
+		img
+			border-radius: 12px
+			max-width: 493px
+			width: 100%
+	&__title
+		color: $additionalColor4
+		font-size: 16px
+		font-weight: 600
+		padding-left: 30px
+		position: relative
+		margin-bottom: 12px
+	&__title-icon
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		left: 0
+		display: flex
+		svg
+			width: 20px
+			height: 20px
+	&__text
+		color: $additionalColor8
+		font-size: 16px
+		p
+			margin-bottom: 23px
+			&:last-child
+				margin-bottom: 0
+			b
+				font-weight: 600
+		ul
+			margin-top: -8px
+			li
+				margin-bottom: 10px
+				&:last-child
+					margin-bottom: 0
+				&::before
+					content: '-'
+					margin-right: 5px
+.article-item4
+	&__img
+		padding-top: 100%
+		position: relative
+		margin-bottom: 10px
+		img
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__title
+		font-size: 16px
+		text-align: center
+		color: $additionalColor8
+.article-item5
+	&__img
+		padding-top: 100%
+		position: relative
+		margin-bottom: 20px
+		img
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			object-fit: scale-down
+	&__title
+		color: $additionalColor8
+		text-align: center
+		font-size: 16px
+.article-item7
+	font-size: 16px
+	margin-bottom: 26px
+	&:last-child
+		margin-bottom: 0
+	&__title
+		font-weight: 600
+		line-height: 1.4
+		margin-bottom: 12px
+	&__text
+		color: $additionalColor8
+		p
+			margin-bottom: 12px
+			&:last-child
+				margin-bottom: 0
+.article-item8
+	&__img
+		padding-top: 73.5%
+		position: relative
+		margin-bottom: 14px
+		img
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			object-fit: cover
+			border-radius: 14px
+	&__text
+		text-align: center
+		color: $additionalColor15
+		font-size: 16px
+.article-item11
+	margin-bottom: 26px
+	&:last-child
+		margin-bottom: 0
+	&__title
+		position: relative
+		padding-left: 44px
+		font-size: 16px
+		line-height: 1.4
+		font-weight: 600
+		margin-bottom: 10px
+	&__title-icon
+		position: absolute
+		width: 30px
+		top: 50%
+		transform: translateY(-50%)
+		left: 0
+	&__text
+		color: $additionalColor8
+		font-size: 16px
+		b
+			color: $mainColor
+			font-weight: 600
+.article-item13
+	width: 48%
+	ol
+		counter-reset: myCounter
+		&[start="16"]
+			counter-reset: myCounter 15
+		li
+			color: $additionalColor8
+			&::before
+				counter-increment: myCounter
+				content: counter(myCounter) '.'
+				margin-right: 5px
+.no-touch
+	.contents-item:hover
+		.contents-item__title
+			text-decoration: none
+	.article-item2__text a:hover,
+	.article > p a:hover
+		text-decoration: none
+
+@media (max-width: 1000px)
+	.article__col5
+		width: 33.333%
+	.article__list5-wrap
+		padding: 24px
+
+@media (max-width: 700px)
+	.article__col4
+		width: 50%
+	.article__list4-wrap
+		padding: 24px
+
+@media (max-width: 650px)
+	.article__wrap1,
+	.article__wrap2
+		width: 100%
+	.article__wrap1
+		margin-bottom: 30px
+
+@media (max-width: 600px)
+	.article > h1
+		font-size: 20px
+	.article > h2, .article > h3, .article > h4, .article > h5
+		font-size: 18px
+		margin-top: 40px
+	.article > p
+		font-size: 15px
+	.contents-item__line
+		display: none
+	.contents-item__icon
+		display: none
+	.contents__list
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+	.article > img
+		margin-top: 30px
+		margin-bottom: 50px
+		border-radius: 7px
+	.article-item3__img
+		padding: 10px
+	.article__list3
+		margin-top: 30px
+		margin-bottom: 30px
+	.article__col5
+		width: 50%
+	.article__col8
+		width: 100%
+	.article-item13
+		width: 100%
+

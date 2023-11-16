@@ -1,0 +1,59 @@
+.mixes
+	margin: 34px 0
+	&__title1
+		font-size: 16px
+		font-weight: 600
+		margin-bottom: 31px
+	&__list
+		display: flex
+		flex-wrap: wrap
+		justify-content: flex-start
+		margin: 0px -22px
+		margin-top: -30px
+	&__col
+		display: flex
+		width: 25%
+		padding: 0px 22px
+		margin-top: 30px
+.mixes-item
+	width: 100%
+	border-radius: 14px
+	background-color: $white
+	padding: 14px
+	&__img
+		position: relative
+		padding-top: 100%
+		margin-bottom: 18px
+		img
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__title
+		font-size: 16px
+		line-height: 1.4
+		font-weight: 600
+
+@media (max-width: 1000px)
+	.mixes__col
+		width: 33.333%
+
+@media (max-width: 700px)
+	.mixes__col
+		width: 50%
+
+@media (max-width: 550px)
+	.mixes__list
+		margin: 0px -10px
+		margin-top: -20px
+	.mixes__col
+		padding: 0px 10px
+		margin-top: 20px
+
+@media (max-width: 374px)
+	.mixes-item
+		padding: 7px
+	.mixes-item__title
+		font-size: 14px

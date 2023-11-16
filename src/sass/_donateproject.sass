@@ -12,8 +12,6 @@
 	&__wrap1
 		width: calc(100% - 339px)
 	&__title1
-		font-size: 26px
-		font-weight: 600
 		margin-bottom: 7px
 	&__text
 		color: $additionalColor8
@@ -26,11 +24,11 @@
 		flex-wrap: wrap
 		justify-content: space-between
 		align-items: center
-		margin-top: -20px
+		margin-top: -14px
 	&__btn4
-		margin-top: 20px
+		margin-top: 14px
 	&__link2
-		margin-top: 20px
+		margin-top: 14px
 	&__wrap2
 		max-width: 275px
 		width: 100%
@@ -101,10 +99,12 @@
 		width: calc(100% - 160px)
 		padding: 30px
 	&__title
+		font-weight: 600
 		font-size: 16px
 		line-height: 1.4
 		margin-bottom: 15px
 	&__price
+		font-weight: 600
 		font-size: 20px
 		color: $additionalColor13
 		margin-bottom: 20px
@@ -138,9 +138,6 @@
 		width: calc(100% - 300px)
 		padding-left: 30px
 	&__title
-		font-size: 26px
-		line-height: 1.4
-		font-weight: 600
 		margin-bottom: 14px
 	&__list
 		margin-bottom: 33px
@@ -162,11 +159,11 @@
 		flex-wrap: wrap
 		justify-content: space-between
 		align-items: center
-		margin-top: -20px
+		margin-top: -14px
 	&__btn4
-		margin-top: 20px
+		margin-top: 14px
 	&__link3
-		margin-top: 20px
+		margin-top: 14px
 .no-touch
 	.donateproject-item1:hover .donateproject-item1__img
 		transform: scale(1.2)
@@ -174,13 +171,15 @@
 @media (max-width: 850px)
 	.donateproject__wrap1
 		width: 100%
-		margin-bottom: 25px
+		margin-bottom: 21px
 	.donateproject__container1
 		padding: 15px
 	.donateproject__col1
 		width: 100%
 	.donateproject-item1__text-wrap
 		padding: 15px
+	.donateproject__wrap2
+		max-width: none
 
 @media (max-width: 750px)
 	.donateproject-item2__img-wrap
@@ -191,14 +190,17 @@
 		padding-left: 0
 	.donateproject-item2__img
 		padding-top: 80%
+	.donateproject-item2__btn-wrap
+		justify-content: flex-start
+	.donateproject-item2__btn4
+		margin-right: 15px
 
 @media (max-width: 600px)
-	.donateproject__title1,
-	.donateproject-item2__title
-		font-size: 20px
 	.donateproject-item2
 		padding: 15px 15px 30px 15px
 		border-radius: 15px
+	.link-back__icon
+		display: none
 
 @media (max-width: 450px)
 	.donateproject-item1__img-wrap

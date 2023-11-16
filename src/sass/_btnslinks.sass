@@ -6,8 +6,8 @@
 	justify-content: center
 	font-weight: 600
 	border-radius: 8px
-	padding: 13px 10px
-	padding-bottom: 16px
+	padding: 14px 10px
+	padding-bottom: 15px
 	transition: background-color 0.3s
 	&__icon
 		margin-right: 8px
@@ -19,7 +19,8 @@
 	display: inline-block
 	color: $additionalColor4
 	background-color: $additionalColor6
-	padding: 12.5px 18px
+	padding: 14px 18px
+	padding-bottom: 15px
 	font-weight: 600
 	border-radius: 8px
 	transition: all 0.3s
@@ -48,12 +49,17 @@
 	color: $additionalColor12
 	border-radius: 8px
 	background-color: $additionalColor7
-	padding: 15px 10px
+	padding: 13px 10px
+	padding-bottom: 16px
 	pointer-events: none
 	transition: all 0.3s
 .input-checkbox1:checked ~ .form .form-btn
 	color: $white
 	background-color: $additionalColor4
+	pointer-events: initial
+.cooperationform .input-checkbox1:checked ~ .form .form-btn
+	color: $white
+	background-color: $additionalColor13
 	pointer-events: initial
 .btn4
 	display: inline-flex
@@ -63,8 +69,8 @@
 	font-weight: 600
 	border-radius: 8px
 	background: $additionalColor4
-	padding: 13px 16px
-	padding-bottom: 16px
+	padding: 14px 16px
+	padding-bottom: 15px
 	transition: background-color 0.3s
 	&__icon
 		display: flex
@@ -84,8 +90,7 @@
 	font-weight: 600
 	border-radius: 8px
 	border: 1px solid $additionalColor4
-	padding: 13px 18px
-	padding-bottom: 15px
+	padding: 14px 18px
 	transition: all 0.3s
 .link-back
 	color: $additionalColor12
@@ -98,13 +103,36 @@
 		display: flex
 		margin-right: 10px
 		svg
+			transform: rotate(180deg)
 			width: 20px
 			height: 20px
-			transform: rotate(180deg)
 .link3
 	display: inline-block
 	color: $additionalColor12
 	transition: color 0.3s
+.link4-list
+	display: flex
+	flex-wrap: wrap
+	justify-content: flex-end
+	align-items: center
+	margin-bottom: 26px
+.link4-item
+	width: 36px
+	height: 36px
+	display: flex
+	align-items: center
+	justify-content: center
+	border-radius: 50%
+	background-color: rgba(255, 255, 255, 0.70)
+	box-shadow: $shadow004
+	margin-right: 12px
+	color: $additionalColor7
+	pointer-events: none
+	svg
+		width: 18px
+		height: 18px
+	&:last-child
+		margin-right: 0
 .no-touch
 	.btn1:hover
 		background-color: $additionalColor5
@@ -118,6 +146,8 @@
 		color: $white
 	.input-checkbox1:checked ~ .form .form-btn:hover
 		background-color: $additionalColor5
+	.cooperationform .input-checkbox1:checked ~ .form .form-btn:hover
+		background-color: $additionalColor20
 	.btn4:hover
 		background-color: $additionalColor5
 	.link2:hover
@@ -126,7 +156,5 @@
 	.btn5:hover
 		background-color: $additionalColor5
 		color: $white
-	.link-back:hover
-		color: $additionalColor4
 	.link3:hover
-		color: $additionalColor4
+		text-decoration: underline

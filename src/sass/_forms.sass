@@ -46,8 +46,8 @@
 		position: absolute
 		top: -1px
 		left: 0
-		width: 24px
-		height: 24px
+		width: 25px
+		height: 25px
 		border-radius: 2px
 		border: 2px solid $additionalColor12
 		transition: border 0.3s
@@ -67,6 +67,24 @@
 		a
 			color: $additionalColor4
 			text-decoration: underline
+.label-radio1
+	display: inline-block
+	cursor: pointer
+	input
+		display: none
+		&:checked ~
+			.label-radio1__text
+				border-radius: 8px
+				border: 2px solid rgba(77, 59, 189, 0.60)
+				background-color: $additionalColor17
+	&__text
+		display: block
+		font-weight: 600
+		padding: 12.5px 10px
+		text-align: center
+		border-radius: 8px
+		border: 2px solid $additionalColor19
+		transition: all 0.3s
 .input-checkbox1:checked ~ .form .label-checkbox1__icon-wrap
 	border: 2px solid $mainColor
 .input-checkbox1:checked ~ .form .label-checkbox1__icon
@@ -74,3 +92,7 @@
 .no-touch
 	.label-checkbox1__text a:hover
 		text-decoration: none
+	.label-radio1:hover .label-radio1__text
+		border-radius: 8px
+		border: 2px solid rgba(77, 59, 189, 0.60)
+		background-color: $additionalColor17

@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', function () {
 		document.body.classList.add('no-touch');
 	}
 
-	let toggle = document.querySelector('#js-toggle');
-	let body = document.querySelector('#js-body');
-	let menu = document.querySelector('#js-menu');
+	const toggle = document.querySelector('#js-toggle');
+	const body = document.querySelector('#js-body');
+	const menu = document.querySelector('#js-menu');
 
 	toggle.addEventListener('click', function () {
 		body.classList.toggle('body-overflow');
@@ -14,18 +14,35 @@ document.addEventListener('DOMContentLoaded', function () {
 		toggle.classList.toggle('active');
 	});
 
-	let header = document.querySelector('#header');
 
-	var lastScrollTop = 0;
-	window.onscroll = onScroll;
-	function onScroll(e) {
-		var top = window.pageYOffset;
-		if (lastScrollTop > top) {
-			header.classList.remove('header--hidden');
-		} else if (lastScrollTop < top) {
+	var lastScroll = 0;
+	const header = document.querySelector('#header');
+	const defaultOffset = 200;
+
+	const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop;
+	const containHidden = () => header.classList.contains('header--hidden');
+
+	window.addEventListener('scroll', () => {
+
+		if (scrollPosition() > lastScroll && !containHidden() && scrollPosition() > defaultOffset) {
 			header.classList.add('header--hidden');
+		} else if (scrollPosition() < lastScroll && containHidden()) {
+			header.classList.remove('header--hidden');
 		}
-		lastScrollTop = top;
+
+		lastScroll = scrollPosition();
+	})
+	// Найти все ссылки начинающиеся на #
+	const anchors = document.querySelectorAll('a[data-target="anchor"]')
+	for (let anchor of anchors) {
+		anchor.addEventListener("click", function (e) {
+			e.preventDefault()
+			const goto = anchor.hasAttribute('href') ? anchor.getAttribute('href') : 'body'
+			document.querySelector(goto).scrollIntoView({
+				behavior: "smooth",
+				block: "start"
+			})
+		})
 	}
 
 });
