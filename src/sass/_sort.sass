@@ -1,0 +1,60 @@
+.sort-wrap
+	display: flex
+	flex-wrap: wrap
+	justify-content: flex-start
+.sort
+	margin-right: 42px
+	position: relative
+	&:last-child
+		margin-right: 0
+	&__btn
+		font-size: 16px
+		display: inline-flex
+		align-items: center
+		justify-content: center
+		cursor: pointer
+		transition: color 0.3s
+		&.active
+			.sort__btn-icon
+				transform: rotate(-90deg)
+	&__btn-icon
+		display: flex
+		transform: rotate(90deg)
+		margin-left: 7px
+		transition: transform 0.3s
+		svg
+			width: 14px
+			height: 14px
+	&__list
+		position: absolute
+		z-index: 20
+		top: calc(100% + 8px)
+		left: 0
+		width: 180px
+		border-radius: 8px
+		background-color: $white
+		box-shadow: $shadow012
+		padding: 6px
+		visibility: hidden
+		opacity: 0
+		pointer-events: none
+		&.active
+			visibility: visible
+			opacity: 1
+			pointer-events: initial
+	&__item
+		display: block
+		padding: 5px 8px
+		cursor: pointer
+		transition: color 0.3s
+
+.no-touch
+	.sort__btn:hover,
+	.sort__item:hover
+		color: $additionalColor5
+		
+@media (max-width: 600px)
+	.sort
+		margin-right: 20px
+	.filter-btn
+		display: flex

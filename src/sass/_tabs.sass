@@ -1,0 +1,24 @@
+.tab-list
+	display: flex
+	flex-wrap: wrap
+	justify-content: flex-start
+.tab-item
+	font-size: 16px
+	color: $additionalColor14
+	padding: 10px 20px
+	border-bottom: 2px solid $additionalColor14
+	transition: all 0.3s
+	&--active
+		color: $additionalColor4
+		border-bottom: 2px solid $additionalColor4
+	&--disabled
+		pointer-events: none
+		color: $additionalColor19
+		border-bottom: 2px solid $additionalColor19
+.tab
+	display: none
+	&--active
+		display: block
+.no-touch
+	.tab-item:hover
+		color: $additionalColor4

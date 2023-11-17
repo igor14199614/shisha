@@ -23,6 +23,7 @@
     "chart.js": "^4.4.0",
     "cleave.js": "^1.6.0",
     "postcss-sort-media-queries": "^5.2.0",
+    "swiper": "^11.0.4",
     "vite-plugin-handlebars": "^1.6.0",
     "vite-svg-sprite-wrapper": "^1.1.1"
   }

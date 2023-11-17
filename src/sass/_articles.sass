@@ -1,5 +1,7 @@
 .articles
 	margin-bottom: 50px
+	.sort-wrap
+		margin-bottom: 26px
 	&__col1
 		margin-bottom: 10px
 		&:last-child
@@ -18,6 +20,37 @@
 		grid-template-columns: repeat(2, 1fr)
 		grid-template-rows: repeat(4, 1fr)
 		grid-gap: 10px
+		.articles-item1
+			padding: 15px
+			box-shadow: $shadow004
+			background-color: #fff
+			color: $mainColor
+			min-height: initial
+			.articles-item1__title
+				font-size: 18px
+				overflow: hidden
+				text-overflow: ellipsis
+				display: -moz-box
+				-moz-box-orient: vertical
+				display: -webkit-box
+				-webkit-line-clamp: 2
+				-webkit-box-orient: vertical
+				line-clamp: 2
+				box-orient: vertical
+				margin-bottom: 6px
+			.articles-item1__text
+				overflow: hidden
+				text-overflow: ellipsis
+				display: -moz-box
+				-moz-box-orient: vertical
+				display: -webkit-box
+				-webkit-line-clamp: 4
+				-webkit-box-orient: vertical
+				line-clamp: 4
+				box-orient: vertical
+				color: $additionalColor8
+			.articles-item1__img1
+				display: none
 		.articles-item1:nth-child(1),
 		.articles-item1:nth-child(5)
 			border: 2px solid $additionalColor11
@@ -43,34 +76,87 @@
 		.articles-item1:nth-child(5)
 			grid-row: 3 / span 2
 			grid-column: 2 / span 1
+	&__list3
+		.articles-item1
+			padding: 25px 15px
+			min-height: 301px
+			.articles-item1__title
+				font-size: 16px
+				overflow: hidden
+				text-overflow: ellipsis
+				display: -moz-box
+				-moz-box-orient: vertical
+				display: -webkit-box
+				-webkit-line-clamp: 2
+				-webkit-box-orient: vertical
+				line-clamp: 2
+				box-orient: vertical
+				margin-bottom: 2px
+			.articles-item1__text
+				overflow: hidden
+				text-overflow: ellipsis
+				display: -moz-box
+				-moz-box-orient: vertical
+				display: -webkit-box
+				-webkit-line-clamp: 3
+				-webkit-box-orient: vertical
+				line-clamp: 3
+				box-orient: vertical
+		.articles-item1__wrap1
+			.views
+				margin-left: 0
+		.articles__col3
+			&:nth-child(2)
+				.articles-item1
+					min-height: 370px
+					.articles-item1__title
+						-webkit-line-clamp: 3
+						-webkit-line-clamp: 3
+					.articles-item1__text
+						-webkit-line-clamp: 6
+						-webkit-line-clamp: 6
 	&__col3
 		margin-bottom: 20px
 		&:last-child
 			margin-bottom: 0
-		&:nth-child(2)
-			.articles-item1--small2
-				min-height: 370px
-				.articles-item1__title
-					-webkit-line-clamp: 3
-					-webkit-line-clamp: 3
-				.articles-item1__text
-					-webkit-line-clamp: 6
-					-webkit-line-clamp: 6
 	&__list4
 		display: flex
 		flex-wrap: wrap
 		justify-content: flex-start
 		margin: 0px -5px
 		margin-top: -10px
+		.articles-item1
+			padding: 25px 15px
+			min-height: initial
+			color: $mainColor
+			border: 2px solid $additionalColor11
+			.articles-item1__title
+				font-size: 16px
+				overflow: hidden
+				text-overflow: ellipsis
+				display: -moz-box
+				-moz-box-orient: vertical
+				display: -webkit-box
+				-webkit-line-clamp: 2
+				-webkit-box-orient: vertical
+				line-clamp: 2
+				box-orient: vertical
+				margin-bottom: 2px
+			.articles-item1__text
+				overflow: hidden
+				text-overflow: ellipsis
+				display: -moz-box
+				-moz-box-orient: vertical
+				display: -webkit-box
+				-webkit-line-clamp: 2
+				-webkit-box-orient: vertical
+				line-clamp: 2
+				box-orient: vertical
+				color: $additionalColor8
 	&__col4
 		width: 50%
 		padding: 0px 5px
 		margin-top: 10px
-		.articles-item1--small1 .articles-item1__text
-			-webkit-line-clamp: 2
-			line-clamp: 2
-		.articles-item1--small1
-			border: 2px solid $additionalColor11
 	&__title1
 		font-size: 16px
 		font-weight: 400
@@ -86,14 +172,14 @@
 		justify-content: flex-start
 		margin: 0px -5px
 		margin-top: -10px
-	&__col5
-		width: 50%
-		padding: 0px 5px
-		margin-top: 10px
 		.articles-item1
 			flex-direction: row
 			flex-wrap: wrap
 			justify-content: space-between
+			color: $mainColor
+			min-height: initial
+			background-color: $white
+			padding: 14px
 		.articles-item1__img1
 			position: relative
 			width: 164px
@@ -103,25 +189,17 @@
 				display: none
 		.articles-item1__text-wrap
 			width: calc(100% - 182px)
-		.articles-item1--small1 .articles-item1__text
+		.articles-item1__text
+			overflow: hidden
+			text-overflow: ellipsis
+			display: -moz-box
+			-moz-box-orient: vertical
+			display: -webkit-box
 			-webkit-line-clamp: 2
+			-webkit-box-orient: vertical
 			line-clamp: 2
-.articles-item1
-	position: relative
-	z-index: 1
-	border-radius: 14px
-	overflow: hidden
-	display: flex
-	flex-direction: column
-	min-height: 300px
-	color: $white
-	padding: 40px 36px
-	&--small1
-		padding: 15px
-		box-shadow: $shadow004
-		background-color: #fff
-		color: $mainColor
-		min-height: initial
+			box-orient: vertical
+			color: $additionalColor8
 		.articles-item1__title
 			font-size: 18px
 			overflow: hidden
@@ -134,48 +212,65 @@
 			line-clamp: 2
 			box-orient: vertical
 			margin-bottom: 6px
-		.articles-item1__text
-			overflow: hidden
-			text-overflow: ellipsis
-			display: -moz-box
-			-moz-box-orient: vertical
-			display: -webkit-box
-			-webkit-line-clamp: 4
-			-webkit-box-orient: vertical
-			line-clamp: 4
-			box-orient: vertical
-			color: $additionalColor8
-	&--small2
-		padding: 25px 15px
-		min-height: 301px
-		.articles-item1__title
-			font-size: 16px
-			overflow: hidden
-			text-overflow: ellipsis
-			display: -moz-box
-			-moz-box-orient: vertical
-			display: -webkit-box
-			-webkit-line-clamp: 2
-			-webkit-box-orient: vertical
-			line-clamp: 2
-			box-orient: vertical
-			margin-bottom: 2px
-		.articles-item1__text
-			overflow: hidden
-			text-overflow: ellipsis
-			display: -moz-box
-			-moz-box-orient: vertical
-			display: -webkit-box
-			-webkit-line-clamp: 3
-			-webkit-box-orient: vertical
-			line-clamp: 3
-			box-orient: vertical
-		.articles-item1__wrap1
+	&__col5
+		width: 50%
+		padding: 0px 5px
+		margin-top: 10px
+	&__list5-style1
+		.articles__list5
+			justify-content: space-between
+			padding: 0
+			margin: 0
+			margin-top: -20px
+		.articles__col5
+			width: calc(100% - 305px)
+			display: flex
+			padding: 0
+			margin: 0
+			margin-top: 20px
+		.articles__col5:nth-child(odd)
+			.articles-item1__img1
+				width: 184px
+			.articles-item1__text-wrap
+				width: calc(100% - 202px)
+		.articles__col5:nth-child(2n)
+			max-width: 260px
+			width: 100%
+			.articles-item1
+				align-items: flex-start
+				color: $white
+				padding: 24px 14px
+			.articles-item1__title
+				font-size: 16px
+			.articles-item1__img1
+				position: absolute
+				width: 100%
+				height: 100%
+				&::after
+					display: block
+			.articles-item1__text
+				color: $white
 			.views
 				margin-left: 0
-	&--noimage1
-		.articles-item1__img1
-			display: none
+				color: $white
+		.articles__list5 .articles-item1__text
+			-webkit-line-clamp: 3
+			line-clamp: 3
+	&__link-wrap1
+		width: calc(100% - 235px)
+		text-align: center
+	&__link1
+		font-size: 14px
+.articles-item1
+	position: relative
+	z-index: 1
+	border-radius: 14px
+	overflow: hidden
+	display: flex
+	flex-direction: column
+	min-height: 300px
+	color: $white
+	padding: 40px 36px
 	&__date-wrap
 		display: flex
 		flex-wrap: wrap
@@ -273,10 +368,16 @@
 .no-touch
 	.articles-item1:hover .articles-item1__img1 img
 		transform: scale(1.2)
-	.articles-item1--small1:hover .articles-item1__title
+	.articles__list2 .articles-item1:hover .articles-item1__title,
+	.articles__list4 .articles-item1:hover .articles-item1__title,
+	.articles__list5 .articles-item1:hover .articles-item1__title
 		color: $additionalColor4
+	.articles__list5-style1 .articles__list5 .articles__col5:nth-child(2n) .articles-item1:hover .articles-item1__title
+		color: $white
+
 @media (max-width: 850px)
-	.articles-item1
+	.articles-item1,
+	.articles__list4 .articles-item1
 		padding: 15px
 	.articles__wrap1
 		width: 100%
@@ -295,10 +396,16 @@
 		padding: 0px 5px
 		margin-top: 10px
 		display: flex
-	.articles-item1--small2,
-	.articles__col3:nth-child(2) .articles-item1--small2
+	.articles__col3 .articles-item1,
+	.articles__list3 .articles__col3:nth-child(2) .articles-item1
 		min-height: initial
 	.articles__col5
+		width: 100%
+	.articles__list5-style1 .articles__col5
+		width: 100%
+	.articles__list5-style1 .articles__col5:nth-child(2n)
+		max-width: none
+	.articles__link-wrap1
 		width: 100%
 
 @media (max-width: 600px)
@@ -321,11 +428,15 @@
 		width: 100%
 		padding-top: 80%
 		margin-bottom: 20px
+	.articles__list5-style1 .articles__col5:nth-child(odd) .articles-item1__text-wrap
+		width: 100%
+	.articles__list5-style1 .articles__col5:nth-child(odd) .articles-item1__img1
+		width: 100%
 	.articles__col5 .articles-item1__text-wrap
 		width: 100%
 	.articles-item1__text
 		margin-bottom: 25px
-	.articles__list2 .articles-item1--small1 .articles-item1__date
+	.articles__list2 .articles-item1 .articles-item1__date
 		font-size: 14px
 		order: 1
 		margin-top: -21px

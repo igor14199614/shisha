@@ -56,6 +56,7 @@
 		line-height: 1.4
 		font-style: italic
 	.article__text2
+		color: $mainColor
 		font-size: 18px
 		font-weight: 600
 	.article__text3
@@ -209,6 +210,45 @@
 		display: flex
 		flex-wrap: wrap
 		justify-content: space-between
+	&__subtitle
+		color: $additionalColor8
+		font-weight: 600
+		font-weight: inherit
+		margin-bottom: 33px
+	&__views
+		margin-bottom: 60px
+	&--template
+		p i,
+		i
+			font-style: italic
+			color: $additionalColor8
+		ul
+			margin: 30px 0
+			li
+				color: $additionalColor8
+				font-size: 16px
+				padding-left: 20px
+				position: relative
+				&::after
+					content: ''
+					position: absolute
+					top: 50%
+					transform: translateY(-50%)
+					left: 0
+					width: 5px
+					height: 5px
+					background-color: $additionalColor8
+					border-radius: 50%
+		ol
+			counter-reset: myCounter
+			margin: 30px 0
+			li
+				color: $additionalColor8
+				font-size: 16px
+				&::before
+					counter-increment: myCounter
+					content: counter(myCounter) '.'
+					margin-right: 5px
 .article-item1
 	color: $additionalColor12
 	margin-right: 18px
@@ -464,4 +504,7 @@
 		width: 100%
 	.article-item13
 		width: 100%
+	.article__list1
+		width: 100%
+		margin-bottom: 12px
 
