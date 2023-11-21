@@ -118,10 +118,10 @@ textarea
 	width: 7px
 	height: 7px
 *::-webkit-scrollbar-track
-	background: #F0F2F6
+	background: $additionalColor7
 	border-radius: 300px
 *::-webkit-scrollbar-thumb
-	background-color: $additionalColor5
+	background-color: $additionalColor2
 	border-radius: 300px
 .no-touch
 	.title__link:hover
@@ -177,6 +177,11 @@ textarea
 		padding: 40px 15px 0 15px
 	.site-wrap
 		padding-top: 67px
+
+@media (max-width: 900px)
+	*::-webkit-scrollbar
+		width: 0
+		height: 0
 
 @media (max-width: 600px)
 	.title

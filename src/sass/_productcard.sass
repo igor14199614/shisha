@@ -12,6 +12,9 @@
 	&__wrap1
 		max-width: 300px
 		width: 100%
+	&__img-main
+		img
+			border-radius: 10px 
 	&__slider1
 		margin-bottom: 8px
 	&__img1
@@ -39,7 +42,7 @@
 			bottom: 0
 			left: 0
 			right: 0
-			border: 2px solid $additionalColor11
+			border: 2px solid $additionalColor19
 			border-radius: 10px
 			opacity: 0
 			transition: opacity 0.3s
@@ -189,6 +192,13 @@
 	.productcard-item1__value
 		width: calc(100% - 120px)
 
-@media (max-width: 600px)
+@media (max-width: 650px)
 	.productcard__container
 		padding: 20px
+	.productcard__tab-list
+		overflow: auto
+		flex-wrap: nowrap
+		margin: 0px -15px
+		padding: 0px 15px
+		.tab-item
+			flex-shrink: 0

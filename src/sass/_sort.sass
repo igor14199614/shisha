@@ -46,12 +46,14 @@
 		display: block
 		padding: 5px 8px
 		cursor: pointer
-		transition: color 0.3s
+		border-radius: 6px
+		transition: all 0.3s
 
 .no-touch
-	.sort__btn:hover,
-	.sort__item:hover
+	.sort__btn:hover
 		color: $additionalColor5
+	.sort__item:hover
+		background-color: $additionalColor7
 		
 @media (max-width: 600px)
 	.sort

@@ -5,18 +5,10 @@
 	margin-bottom: 8px
 	&__input-wrap
 		position: relative
-	&__icon
-		position: absolute
-		top: 50%
-		transform: translateY(-50%)
-		left: 14px
-		display: flex
-		color: $additionalColor14
-		svg
-			width: 20px
-			height: 20px
 	&--error
 		.input1
+			border: 2px solid red
+		.textarea1
 			border: 2px solid red
 	&__text-error
 		color: red
@@ -27,9 +19,12 @@
 	background-color: #fff
 	box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.04)
 	padding: 12.5px 14px
-	transition: border 0.3s
+	transition: all 0.3s
 	&::placeholder
 		color: $additionalColor16
+	&:focus
+		border: 2px solid $additionalColor22
+		box-shadow: $shadow004
 .textarea1
 	height: 116px
 	border-radius: 8px
@@ -37,9 +32,12 @@
 	background-color: #fff
 	box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.04)
 	padding: 12.5px 14px
-	transition: border 0.3s
+	transition: all 0.3s
 	&::placeholder
 		color: $additionalColor16
+	&:focus
+		border: 2px solid $additionalColor22
+		box-shadow: $shadow004
 .label-checkbox1-wrap
 	margin-top: 15px
 	margin-bottom: 39px

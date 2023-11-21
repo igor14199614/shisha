@@ -6,15 +6,15 @@
 	font-size: 16px
 	color: $additionalColor14
 	padding: 10px 20px
-	border-bottom: 2px solid $additionalColor14
+	border-bottom: 2px solid $additionalColor19
 	transition: all 0.3s
 	&--active
 		color: $additionalColor4
 		border-bottom: 2px solid $additionalColor4
 	&--disabled
 		pointer-events: none
-		color: $additionalColor19
-		border-bottom: 2px solid $additionalColor19
+		color: $additionalColor23
+		border-bottom: 2px solid $additionalColor7
 .tab
 	display: none
 	&--active
@@ -22,3 +22,8 @@
 .no-touch
 	.tab-item:hover
 		color: $additionalColor4
+
+@media (max-width: 650px)
+	.tab-item
+		font-size: 15px
+		padding: 10px 7px
